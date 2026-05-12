@@ -1,0 +1,69 @@
+{
+  "projects": {
+    "GC-simple-render": {
+      "additionalDependencies": [
+        "GCE.lib"
+      ],
+      "additionalIncludeDirectories": [
+        "$(SolutionDir)../vendor/GCRender/includes/",
+        "$(SolutionDir)../vendor/GCRender/includes/Core/",
+        "$(SolutionDir)../vendor/GCRender/includes/Render/"
+      ],
+      "additionalLibraryDirectories": [
+        "$(SolutionDir)../vendor/GCRender/lib/"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "Sandbox"
+      ],
+      "guid": "38F75103-529A-3190-66A6-19F06F252E3F",
+      "lib": true,
+      "pch": true,
+      "preprocessorDefinitions": [],
+      "vcpkg": false,
+      "window": false
+    },
+    "Pathfinding": {
+      "additionalDependencies": [],
+      "additionalIncludeDirectories": [
+        "$(SolutionDir)../vendor/GCRender/includes/",
+        "$(SolutionDir)../vendor/GCRender/includes/Core/",
+        "$(SolutionDir)../vendor/GCRender/includes/Render/"
+      ],
+      "additionalLibraryDirectories": [],
+      "dependencies": [
+        "GC-simple-render"
+      ],
+      "dependents": [],
+      "guid": "21986F95-192D-33EA-6697-2990649628E8",
+      "lib": false,
+      "pch": true,
+      "preprocessorDefinitions": [],
+      "vcpkg": false,
+      "window": false
+    },
+    "Sandbox": {
+      "additionalDependencies": [],
+      "additionalIncludeDirectories": [
+        "$(SolutionDir)../vendor/GCRender/includes/",
+        "$(SolutionDir)../vendor/GCRender/includes/Core/",
+        "$(SolutionDir)../vendor/GCRender/includes/Render/"
+      ],
+      "additionalLibraryDirectories": [],
+      "dependencies": [
+        "GC-simple-render"
+      ],
+      "dependents": [],
+      "guid": "6D3365EA-0685-67A6-11D8-272C75644253",
+      "lib": false,
+      "pch": true,
+      "preprocessorDefinitions": [],
+      "vcpkg": false,
+      "window": false
+    }
+  },
+  "solution_guid": "6B045A50-69CF-1E1C-2808-683D565F65A7",
+  "solution_name": "GCSimpleRender",
+  "startup_project": "Pathfinding",
+  "version": "1.17.4"
+}
